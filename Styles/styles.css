@@ -1,0 +1,161 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+
+}
+
+:root {
+    --blue: #003049;
+    --max-red: #d62828;
+    --orange: #f77f00;
+    --max-yellow-red: #fcbf49;
+    --mellow-lemon: #eae2b7;
+    --white: white;
+    --black: black;
+
+    --primary: #d62828;
+}
+
+body {
+    background-color: var(--max-red);
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+/* .navbar .link-container {
+    padding: 5px 5px 5px 5px;
+
+} */
+.navbar .link {
+    padding: 10px;
+    text-decoration: none;
+    
+}
+
+.navbar .link .link-text {
+    color: var(--max-yellow-red);
+    font-weight: 300;
+}
+
+.navbar .link:hover .link-text {
+    color: var(--orange);
+
+}
+.title{  
+   
+    height: 200px;
+    display: flex;
+    /* flex-direction: row; --------defult*/
+    /* y axis  */
+    align-items: center; 
+    /* x axis  */
+    justify-content: center;
+  
+}
+
+.title .title-text{
+    color: var(--blue);
+    font-size: 5rem;
+    font-weight: 400;
+
+}
+
+.add-char::after {
+    content: "_";
+    visibility: hidden;
+}
+.motto {
+    margin-top: 10px;
+
+    text-align: center;
+    color: var(--max-yellow-red);
+    font-weight: 300;
+}
+
+.main {
+    
+    width: 70%;
+     
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: 10px auto;
+
+}
+
+.card {
+    padding: 30px 50px;
+    background-color: var(--white);
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 10px 0 10px 0;
+}
+
+
+.card .card-heading {
+    font-size: 1.5rem;
+    color:  var(--max-red);
+    text-align: center;
+    font-weight: 300;
+
+}
+.card .card-component {
+    margin-bottom: 20px;
+}
+
+.card .card-component .component-heading {
+
+    color: var(--orange);
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin: 0  0 10px 0;
+
+}
+
+.component-cyo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    
+    
+}
+
+.component-cyo .size .size-heading {
+    color: var(--orange);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+   
+}
+
+.component-cyo .size .size-content {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 5px;
+  
+}
+
+.component-cyo .size:not(:last-child) {
+    border-right: 1px solid var(--max-red);
+    padding-right: 10px;
+}
+
+
+
+.size .size-content .price {
+    text-align: right;
+}
+
+/* .grid-item {
+    white-space: nowrap;
+} */
+
+.size .size-content .grid-item {
+    font-size: 0.8rem;
+}
