@@ -1,3 +1,3 @@
 # Seniores
-Recreation of "Seniores" website 
-https://seniores.herokuapp.com/
+Recreation of "Seniores" website    
+My Website: https://seniores.herokuapp.com/
